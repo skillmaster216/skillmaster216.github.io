@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Discusión | Patrones GRASP: Experto </title>
+<title>Discusión | Patrones GRASP: Controlador </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Marrugo Cantillo, Elio; Monroy Ríos, Martin" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -19,13 +19,14 @@
 <body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">Patrones GRASP: Experto</div></header>
+<header id="header" ><div id="headerContent">Patrones GRASP: Controlador</div></header>
 <nav id="siteNav">
 <ul>
-   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Experto</a></li>
+   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Controlador</a></li>
    <li><a href="contenido.html" class="daddy">Contenido</a>
    <ul class="other-section">
-      <li><a href="pregunta_clave.html" class="no-ch">Pregunta clave</a></li>
+      <li><a href="qu_es_un_evento.html" class="no-ch">¿Qué es un evento?</a></li>
+      <li><a href="qu_es_un_controlador.html" class="no-ch">¿Qué es un Controlador?</a></li>
    </ul>
    </li>
    <li><a href="observaciones.html" class="no-ch">Observaciones</a></li>
@@ -59,7 +60,10 @@
 <div class="iDevice_content_wrapper">
 <div id="ta10_124_2" class="block iDevice_content">
 <div class="exe-text"><ul>
-<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Con frecuencia hay muchos expertos en información parcial que colaboran en el cumplimiento de una tarea. Si la información para el cumplimiento de una responsabilidad se encuentra dispersa por diferentes clases de objetos, puede implicar a muchos expertos en información “parcial” que colaborarán en la tarea. </span></li>
+<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Los eventos no sólo llegan de la GUI, también pueden llegar de otros sistemas, dispositivos, sensores, etc., por ejemplo, un conmutador de telecomunicaciones para el procesamiento de llamadas, o señales desde sensores para un sistema de control de procesos.</span></li>
+<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">El controlador delega el trabajo (no lo realiza), coordina o controla la actividad.</span></li>
+<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Se recomienda utilizar la misma clase controlador para todo el sistema.</span><br /><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">El patrón Controlador proporciona guías acerca de las opciones generalmente aceptadas y adecuadas. </span></li>
+<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Error típico: asignar muchas responsabilidades a los controladores.</span></li>
 </ul></div>
 </div>
 </div>

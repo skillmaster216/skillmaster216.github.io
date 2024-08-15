@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Actividad 2 | Patrones GRASP: Experto </title>
+<title>Actividad 2 | Patrones GRASP: Controlador </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Marrugo Cantillo, Elio; Monroy Ríos, Martin" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -19,13 +19,14 @@
 <body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">Patrones GRASP: Experto</div></header>
+<header id="header" ><div id="headerContent">Patrones GRASP: Controlador</div></header>
 <nav id="siteNav">
 <ul>
-   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Experto</a></li>
+   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Controlador</a></li>
    <li><a href="contenido.html" class="daddy">Contenido</a>
    <ul class="other-section">
-      <li><a href="pregunta_clave.html" class="no-ch">Pregunta clave</a></li>
+      <li><a href="qu_es_un_evento.html" class="no-ch">¿Qué es un evento?</a></li>
+      <li><a href="qu_es_un_controlador.html" class="no-ch">¿Qué es un Controlador?</a></li>
    </ul>
    </li>
    <li><a href="observaciones.html" class="no-ch">Observaciones</a></li>
@@ -52,6 +53,86 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Actividad 2</h1></header>
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id22">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Pregunta de Elección Múltiple</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-22_86" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion22_86" class="block question iDevice_content">
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Haces parte de un equipo para el desarrollo de un sistema para máquinas dispensadoras, en las que la persona podrá colocar una orden a partir de una combinación de botones, o cancelar la orden que está realizando. De acuerdo con el enunciado anterior se realizó el siguiente diagrama:</span></p>
+<figure class="exe-figure exe-image position-center" style="width: 508px; text-align: center;"><img src="Actividad_2_-_Diagrama.png" alt="Ilustración 2. Diagrama de clases" width="508" height="174" />
+<figcaption class="figcaption"><span class="title" style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><em>Diagrama de clases</em></span></figcaption>
+</figure>
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">De acuerdo al diagrama, ¿Qué tipo de controlador se está utilizando?</span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i22_89" class="sr-av"><a href="#answer-22_89">Opción 1</a></label><input type="radio" name="option22_86" id="i22_89" class="exe-radio-option exe-radio-option-0-3-22_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-22_89"><div id="taans22_89" class="block iDevice_content">
+<p><span style="font-family: helvetica, arial, sans-serif; font-size: 14pt;">Controlador de fachada.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i22_92" class="sr-av"><a href="#answer-22_92">Opción 2</a></label><input type="radio" name="option22_86" id="i22_92" class="exe-radio-option exe-radio-option-1-3-22_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-22_92"><div id="taans22_92" class="block iDevice_content">
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Controlador de caso de uso.</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i22_362" class="sr-av"><a href="#answer-22_362">Opción 3</a></label><input type="radio" name="option22_86" id="i22_362" class="exe-radio-option exe-radio-option-2-3-22_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-22_362"><div id="taans22_362" class="block iDevice_content">
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Controlador saturado.</span></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b22_86" class="feedback js-hidden">
+<div id="taf22_89" class=" iDevice_content">
+<h1><span style="font-size: 24pt; font-family: helvetica, arial, sans-serif; color: #ff0000;">Incorrecto</span><span style="font-size: 24pt; font-family: helvetica, arial, sans-serif; color: #ff0000;"></span></h1>
+<p><span style="font-size: 24pt; font-family: helvetica, arial, sans-serif; color: #ff0000;"></span></p>
+</div>
+</section>
+<section id="sa1b22_86" class="feedback js-hidden">
+<div id="taf22_92" class=" iDevice_content">
+<h1><span style="font-size: 24pt; font-family: helvetica, arial, sans-serif; color: #339966;">Correcto</span></h1>
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">En esta situación se utilizó un controlador de caso de uso, a partir del caso de uso “colocar órdenes” con el fin de tener un ambiente más focalizado, facilitando su comprensión y mantenimiento al momento de realizar futuras adiciones.</span></p>
+</div>
+</section>
+<section id="sa2b22_86" class="feedback js-hidden">
+<div id="taf22_362" class=" iDevice_content">
+<h1><span style="font-size: 24pt; font-family: helvetica, arial, sans-serif; color: #ff0000;">Incorrecto</span></h1>
+<p><span style="font-size: 24pt; font-family: helvetica, arial, sans-serif; color: #ff0000;"></span></p>
+</div>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-22_89">Incorrecto</a><span> (<a href="#sa0b22_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-22_92">Opción correcta</a><span> (<a href="#sa1b22_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-22_362">Incorrecto</a><span> (<a href="#sa2b22_86">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>

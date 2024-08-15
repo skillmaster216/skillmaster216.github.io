@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Ejemplo | Patrones GRASP: Experto </title>
+<title>Ejemplo | Patrones GRASP: Controlador </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Marrugo Cantillo, Elio; Monroy Ríos, Martin" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -19,13 +19,14 @@
 <body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">Patrones GRASP: Experto</div></header>
+<header id="header" ><div id="headerContent">Patrones GRASP: Controlador</div></header>
 <nav id="siteNav">
 <ul>
-   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Experto</a></li>
+   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Controlador</a></li>
    <li><a href="contenido.html" class="daddy">Contenido</a>
    <ul class="other-section">
-      <li><a href="pregunta_clave.html" class="no-ch">Pregunta clave</a></li>
+      <li><a href="qu_es_un_evento.html" class="no-ch">¿Qué es un evento?</a></li>
+      <li><a href="qu_es_un_controlador.html" class="no-ch">¿Qué es un Controlador?</a></li>
    </ul>
    </li>
    <li><a href="observaciones.html" class="no-ch">Observaciones</a></li>
@@ -58,16 +59,20 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta14_128_2" class="block iDevice_content">
-<div class="exe-text"><p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Supongamos que estás construyendo una aplicación para una tienda de ropa, toda venta se debe registrar con fecha, productos y un identificador, además la aplicación debe permitir registrar el pago asociado con la venta. Este pago es una cantidad igual o mayor que el total de la venta. El problema sería: ¿Qué clase es la responsable de saber el total de la venta?</span></p>
-<figure class="exe-figure exe-image position-center" style="width: 460px; text-align: center;"><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><img src="Experto-ejemplo.png" alt="Ejemplo patrón experto" width="460" height="393" /></span>
-<figcaption class="figcaption"><span class="title" style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><em>Ilustración 1 Ejemplo patrón experto</em></span></figcaption>
+<div class="exe-text"><p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Has sido contratado en una empresa  vendedora de automóviles y debes implementar un botón para listar todos los autos disponibles. Pero antes de codificar la solución debes presentar tu idea en un diagrama de clases. Una posible solución sin el patrón podría ser:</span></p>
+<figure class="exe-figure exe-image position-center" style="width: 506px; text-align: center;">
+<div class="figcaption header"><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><strong>Solución sin el patrón</strong></span></div>
+<span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><img src="Controlador_sin_el_patron.png" alt="Solución sin el patrón" width="506" height="216" /></span>
+<figcaption class="figcaption"><span class="title" style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><em>Solución sin el patrón<br /><br /></em></span></figcaption>
 </figure>
-<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Con la información que tenemos y el diagrama de clases podemos darnos cuenta que algunas clases necesitan saber el total de la venta (Venta y Registro). Entonces utilizando el patrón Experto asignaremos la responsabilidad de calcularTotal a la clase que tenga la información necesaria para calcular el total de la venta. En este caso es la clase Venta ya que contiene la lista de productos con la cantidad vendida de cada uno, pero sabemos que el total de la venta es la suma de los subtotales de cada LineaDeVenta.</span></p>
-<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Por lo cual tenemos dos responsabilidades que asignar, y esto no presenta ningún problema ya que en ocasiones cumplir una responsabilidad requerirá información de diferentes clases expertas de sus datos.</span></p>
-<figure class="exe-figure exe-image position-center" style="width: 436px; text-align: center;"><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><img src="Experto-ejemplo_2.png" alt="Ejemplo aplicando patrón Experto " width="436" height="393" /></span>
-<figcaption class="figcaption"><span class="title" style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><em>Ilustración 2 Ejemplo aplicando patrón Experto </em></span></figcaption>
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Está propuesta, aunque a primera vista es funcional y soluciona el problema, responsabiliza a la Interfaz de usuario de los eventos del sistema disminuyendo su cohesión. Además establece un acoplamiento fuerte con la clase ListaAutos, dificultando las posibles modificaciones futuras al sistema.</span></p>
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Una posible solución aplicando el patrón Controlador sería:</span></p>
+<figure class="exe-figure exe-image position-center" style="width: 738px; text-align: center;">
+<div class="figcaption header"><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><strong>Solución aplicando el patrón</strong></span></div>
+<span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><img src="Controlador_aplicando_el_patron.png" alt="Solución aplicando el patrón" width="738" height="202" /></span>
+<figcaption class="figcaption"><span class="title" style="font-size: 14pt; font-family: helvetica, arial, sans-serif;"><em>Solución aplicando el patrón</em></span></figcaption>
 </figure>
-<p></p></div>
+<p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">En este caso se hizo un acercamiento utilizando un controlador de fachada que se encargaría de manejar todo tipo de eventos de la clase ListaAutos, disminuyendo el acoplamiento con la lógica del sistema y facilitando su mantenimiento y evolución.</span></p></div>
 </div>
 </div>
 </div>

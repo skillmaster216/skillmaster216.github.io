@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Contenido | Patrones GRASP: Experto </title>
+<title>Contenido | Patrones GRASP: Controlador </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Marrugo Cantillo, Elio; Monroy Ríos, Martin" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -19,13 +19,14 @@
 <body class="exe-web-site" id="exe-node-1"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
-<header id="header" ><div id="headerContent">Patrones GRASP: Experto</div></header>
+<header id="header" ><div id="headerContent">Patrones GRASP: Controlador</div></header>
 <nav id="siteNav">
 <ul>
-   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Experto</a></li>
+   <li><a href="index.html" class="daddy main-node">Patrones GRASP: Controlador</a></li>
    <li id="active"><a href="contenido.html" class="active daddy">Contenido</a>
    <ul>
-      <li><a href="pregunta_clave.html" class="no-ch">Pregunta clave</a></li>
+      <li><a href="qu_es_un_evento.html" class="no-ch">¿Qué es un evento?</a></li>
+      <li><a href="qu_es_un_controlador.html" class="no-ch">¿Qué es un Controlador?</a></li>
    </ul>
    </li>
    <li><a href="observaciones.html" class="no-ch">Observaciones</a></li>
@@ -46,7 +47,7 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="pregunta_clave.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="qu_es_un_evento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -58,7 +59,7 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta4_118_2" class="block iDevice_content">
-<div class="exe-text"><p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">¿Cuál es el principio general para asignar responsabilidades a los objetos?</span></p></div>
+<div class="exe-text"><p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">¿Quién debe ser responsable de gestionar un evento de entrada al sistema?</span></p></div>
 </div>
 </div>
 </div>
@@ -70,7 +71,11 @@
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
 <div id="ta5_119_2" class="block iDevice_content">
-<div class="exe-text"><p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Asigne una responsabilidad al experto en información, que es la clase que tiene la información necesaria para llevar a cabo la responsabilidad.</span></p></div>
+<div class="exe-text"><p><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Asigne la responsabilidad de gestionar un mensaje de un evento del sistema a una clase que represente una de estas opciones: </span></p>
+<ul>
+<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Representa el sistema global, dispositivo o un subsistema (controlador de fachada).</span></li>
+<li><span style="font-size: 14pt; font-family: helvetica, arial, sans-serif;">Representa un escenario de caso de uso en el que tiene lugar el evento del sistema (controlador de caso de uso o sesión).</span></li>
+</ul></div>
 </div>
 </div>
 </div>
@@ -83,7 +88,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="pregunta_clave.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="index.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="qu_es_un_evento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
